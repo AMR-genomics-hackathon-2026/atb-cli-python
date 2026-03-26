@@ -1,0 +1,35 @@
+select = [
+  "sample_accession",
+  "run_accession",
+  "accession",
+  "collection_date",
+  "country",
+  "scientific_name",
+  "host",
+  "instrument_platform",
+  "library_strategy"
+]
+
+sort_by = ["collection_date", "sample_accession"]
+distinct = true
+limit = 10
+
+#[[filters]]
+#column = "scientific_name"
+#op = "in"
+#value = ["Neisseria gonorrhoeae"]
+
+[[filters]]
+column = "country"
+op = "in"
+value = ["USA", "United Kingdom"]
+
+[[filters]]
+column = "collection_date"
+op = "between"
+value = ["1900-01-01", "2027-01-01"]
+
+[[filters]]
+column = "instrument_platform"
+op = "eq"
+value = "ILLUMINA"
