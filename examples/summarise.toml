@@ -1,0 +1,6 @@
+[summary]
+id_column = "sample_accession"
+date_columns = ["collection_date"]
+categorical_columns = ["country", "instrument_platform", "scientific_name"]
+custom_columns = ["host", "library_strategy"]
+top_n = 15

@@ -1,0 +1,17 @@
+{
+  "latest": "2026-03-01",
+  "versions": {
+    "2026-02-01": {
+      "parquet_url": "https://data.example.org/atb/2026-02-01/atb.parquet",
+      "checksum_sha256": "abc123...",
+      "sequence_url_template": "s3://allthebacteria-assemblies/<SAMPLE_ID>.fa.gz",
+      "release_date": "2026-02-01"
+    },
+    "2026-03-01": {
+      "parquet_url": "https://data.example.org/atb/2026-03-01/atb.parquet",
+      "checksum_sha256": "def456...",
+      "sequence_url_template": "s3://allthebacteria-assemblies/<SAMPLE_ID>.fa.gz",
+      "release_date": "2026-03-01"
+    }
+  }
+}
